@@ -1,0 +1,57 @@
+.col2{
+  background-color: #f4e933;
+   margin-left: -5%;
+}
+.scroller_text{
+  position: absolute; border: 2px solid black; left: 30%;
+}
+.bttn{
+border: 2px solid black;
+}
+
+
+div.myDiv {
+    
+    transform: translate(0%, 550%) rotate(-20deg) ;
+
+  }
+  div.myDiv2 {
+    
+    transform: translate(0%, 550%) rotate(20deg) ;
+
+  }
+
+
+
+.movetext {
+  animation: move1 12s linear infinite;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.movetext1 {
+  animation: moves2 24s linear infinite;
+  position: absolute;
+  left: 100%;
+  width: 100%;
+}
+.movetext2 {
+  animation-delay: 12s;
+}
+
+@keyframes move1 {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+@keyframes moves2 {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -100%;
+  }
+}
